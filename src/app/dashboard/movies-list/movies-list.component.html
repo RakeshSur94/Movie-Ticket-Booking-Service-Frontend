@@ -1,0 +1,3 @@
+<div class="d-flex flex-wrap justify-content-center">
+    <app-movies *ngFor="let movies of movies" [movies]="movies" class="mx-2 my-2" [routerLink]="[movies.movieId]" [@fadeInOut] [@scaleIn]></app-movies>
+  </div>

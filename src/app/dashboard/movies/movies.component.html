@@ -1,0 +1,14 @@
+
+<mat-card class="restaurant-card no-shadow" [@zoomInOut]="hoverState" (mouseover)="onHover(true)" (mouseout)="onHover(false)">
+    <div class="card-image-container">
+      <img mat-card-image [src]="movies?.imageUrl" alt="Restaurant Photo">
+    </div>
+    <mat-card-content>
+      <div class="d-flex flex-column">
+          <div class="fw-bold text-truncate">{{movies?.movieName}}</div>
+          <div class="d-flex flex-row fw-bold"><mat-icon class="ratingicon">stars</mat-icon>{{movies?.imdbRating}}</div>
+          <div class="text-secondary text-truncate">{{movies?.realeseDate}}</div>
+          <div class="text-secondary">{{movies?.location}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
